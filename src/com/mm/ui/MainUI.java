@@ -34,6 +34,7 @@ import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
@@ -228,7 +229,7 @@ public class MainUI {
                         return;
                     }
                     List<ItemData> collect = list.stream().filter(ItemData::getCheck).collect(Collectors.toList());
-                    if (CollectionUtils.isEmpty(collect)) {
+                    if (collect == null || collect.size() == 0) {
                         //Messages.showMessageDialog("请选择模板", "错误", Messages.getInformationIcon());
                         CodeGenUtil.popMessage("错误", "请选择模板", mainPanel);
                         return;
