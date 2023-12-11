@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="codegenPlugin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/codegenPlugin_jar</output-path>
+    <root id="archive" name="codegenPlugin.jar">
+      <element id="module-output" name="codegenPlugin" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/fastjson2-2.0.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/freemarker-2.3.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/spring-web-5.0.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/spring-core-5.0.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/spring-beans-5.0.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/spring-context-5.0.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/spring-webmvc-5.0.11.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/resources/dependence/spring-context-support-5.0.6.RELEASE.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
