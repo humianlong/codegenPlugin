@@ -1,0 +1,48 @@
+<idea-plugin>
+  <id>com.mm.codegen</id>
+  <name>codegen</name>
+  <version>1.0</version>
+  <vendor email="1214194580@qq.com">mm</vendor>
+
+  <description><![CDATA[
+      Generate custom files based on freemarker templates
+      <br>
+      1. Create a Freemarker template with the following naming format: template name + "_" + generate file type + ".ftl" (entity_java.ftl, dao_xml.ftl)
+      <br>
+      2. Right click on the directory and click on CodeGen to open the configuration interface
+      <br>
+      3. Select template path
+      <br>
+      4. Fill in the name
+      <br>
+      5. Fill in the content
+      <br>
+      6. Select the template to be generated and click the generate button
+    ]]></description>
+
+  <change-notes><![CDATA[
+      none.<br>
+      <em></em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="177.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.java</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="popAction" class="com.mm.action.PopAction" text="CodeGen" description="gen code">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </action>
+  </actions>
+
+</idea-plugin>

@@ -1,0 +1,18 @@
+{
+	"entity": {
+		"name": "User",
+		"columns": [
+			{
+				"name": "id",
+				"type": "int"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			}
+		]
+	},
+	"config": {
+		"basepkg": "com.mm"
+	}
+}
