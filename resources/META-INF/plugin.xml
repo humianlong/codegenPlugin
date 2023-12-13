@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.mm.codegen</id>
-  <name>codegen</name>
+  <name>GenerationForFreemarker</name>
   <version>1.0</version>
   <vendor email="1214194580@qq.com">mm</vendor>
 
